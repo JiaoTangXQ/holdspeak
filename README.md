@@ -122,3 +122,7 @@ find hammerspoon spec scripts -name '*.lua' -print0 | xargs -0 -n1 luac -p   # L
 - pane 布局刚变完（新开/关掉 pane）的瞬间，第一次长按可能会落空，需要等后台缓存刷新完成。
 - Karabiner-Elements 的 `shell_command` 是异步派发，不会等它返回再触发同一 `to_*` 数组里的后续事件。这正是本项目把 pane 切换放进 `to_delayed_action` 并且**早于 hold 阈值**的原因，而不是和 `fn` 一起塞进 `to_if_held_down`。
 - 通过 `hs.eventtap` 合成的 `fn` 事件不会被微信按住说话识别，只有经 Karabiner Virtual HID 驱动发出的 `fn` 才有效。因此这个项目绕不开 Karabiner-Elements。
+
+## 致谢
+
+感谢 [linux.do](https://linux.do/) 社区。这个项目的很多想法、思路以及踩坑后的一次次坚持，都源于在社区里看到的讨论、分享和鼓励。没有这个社区的氛围，我大概不会把一个"顺手写写"的小脚本打磨到能公开发布的程度。向每一位在 linux.do 慷慨分享经验的朋友致意。
