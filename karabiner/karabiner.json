@@ -1,0 +1,505 @@
+{
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Auto Speak Digit 1",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "1",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=1'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 2",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "2",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=2'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 3",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "3",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "3",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=3'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 4",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "4",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "4",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=4'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 5",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "5",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "5",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=5'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 6",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "6",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "6",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=6'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 7",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "7",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "7",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=7'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 8",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "8",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "8",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=8'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 9",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "9",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "9",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=9'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Auto Speak Digit 0",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "0",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "0",
+                                        "halt": true
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "fn",
+                                        "halt": true
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 550,
+                                    "basic.to_delayed_action_delay_milliseconds": 200
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ]
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_invoked": [
+                                        {
+                                            "shell_command": "/usr/bin/open -g 'hammerspoon://auto-speak-focus?index=10'"
+                                        }
+                                    ],
+                                    "to_if_canceled": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true,
+            "virtual_hid_keyboard": {
+                "keyboard_type_v2": "ansi"
+            }
+        }
+    ]
+}

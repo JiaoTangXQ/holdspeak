@@ -1,0 +1,6 @@
+.build/
+*.swp
+*.log
+*.tmp
+.DS_Store
+helper/models/*.bin
